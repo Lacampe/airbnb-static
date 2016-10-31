@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <% data.team.each do |member, infos| %>
+      <div class="col-md-4">
+        <div class="card">
+          <%= image_tag infos.image, class: "avatar-large" %>
+          <h2><%= member.capitalize %></h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
